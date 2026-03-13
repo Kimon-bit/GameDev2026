@@ -1,0 +1,90 @@
+/* =========================================
+   GLOBAL ROOT
+   ========================================= */
+
+:root
+{
+    /* Screen padding so bars are not at edge */
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+}
+
+
+/* =========================================
+   HEALTH BAR CONTAINER
+   ========================================= */
+
+#health-container
+{
+    width: 100%;
+    height: 12%;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* =========================================
+   BASE HEALTH BAR STYLE
+   ========================================= */
+
+.health-bar
+{
+    width: 45%;
+    height: 100%;
+}
+
+
+/* =========================================
+   MIRRORED ENEMY BAR
+   ========================================= */
+
+#enemy-health
+{
+    scale: -1 1;
+}
+
+
+/* =========================================
+   PROGRESS BAR INTERNAL FIXES
+   (UI Toolkit defaults don't scale well)
+   ========================================= */
+
+.health-bar .unity-progress-bar__background
+{
+    height: 100%;
+    border-radius: 6px;
+}
+
+.health-bar .unity-progress-bar__progress
+{
+    height: 100%;
+    border-radius: 6px;
+}
+
+
+/* =========================================
+   OPTIONAL COLORS
+   ========================================= */
+
+#player-health .unity-progress-bar__progress
+{
+    background-color: rgb(70,200,70);
+}
+
+#enemy-health .unity-progress-bar__progress
+{
+    background-color: rgb(220,70,70);
+}
+
+
+/* =========================================
+   REMOVE PROGRESSBAR LABEL (WE ARE NOT USING IT)
+   ========================================= */
+
+.unity-progress-bar__title
+{
+    display: none;
+}

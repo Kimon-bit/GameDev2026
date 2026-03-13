@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/FighterHUD.uss?fileID=7433441132597879392&amp;guid=09c38cdf9211bd0428e539b8c72cb22c&amp;type=3#FighterHUD"/>
+    <ui:VisualElement name="health-container">
+        <ui:ProgressBar value="100" title="Player" name="player-health" class="health-bar"/>
+        <ui:ProgressBar value="100" title="" name="enemy-health" class="health-bar"/>
+    </ui:VisualElement>
+</ui:UXML>
