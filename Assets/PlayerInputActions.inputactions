@@ -25,9 +25,27 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Attack",
+                    "name": "LightAttack",
                     "type": "Button",
-                    "id": "4757588c-6e90-433b-aaeb-d62120e6133a",
+                    "id": "4a98346a-716b-41ac-8365-42b9ed7b5f22",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "HeavyAttack",
+                    "type": "Button",
+                    "id": "07102e94-1fb7-4291-a960-c6d641bfb2bf",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "AirAttack",
+                    "type": "Button",
+                    "id": "19c9bfac-5c76-4fef-9b38-022236431dcc",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -70,23 +88,45 @@
                 },
                 {
                     "name": "",
-                    "id": "56e7a8b5-49f6-47c5-8a4e-ab1e8577eaf1",
-                    "path": "<Keyboard>/j",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Attack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "2376b712-ced3-4a15-93dc-93c2cdf25fe7",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0f5c1e2a-9420-495d-9b17-72d04ad0a211",
+                    "path": "<Keyboard>/j",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LightAttack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "669e0152-ae27-4b7d-805e-c42c28257838",
+                    "path": "<Keyboard>/k",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HeavyAttack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e7d16247-e418-4c80-a4a3-5c6a04f67092",
+                    "path": "<Keyboard>/l",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AirAttack",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

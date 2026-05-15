@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7f30070e2cfe93142b224399f750a999
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - hitbox: {instanceID: 0}
+  - lightAttack: {fileID: 11400000, guid: f93a8165fe8e2de4eb389e56e788dc99, type: 2}
+  - heavyAttack: {fileID: 11400000, guid: 6e21174cb19c5b6409fd5fe625e709b6, type: 2}
+  - airAttack: {fileID: 11400000, guid: 51da65518c457854296f84a7aa2473ed, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

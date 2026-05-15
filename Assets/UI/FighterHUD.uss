@@ -1,90 +1,94 @@
-/* =========================================
-   GLOBAL ROOT
-   ========================================= */
-
-:root
-{
-    /* Screen padding so bars are not at edge */
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 2%;
-}
-
-
-/* =========================================
-   HEALTH BAR CONTAINER
-   ========================================= */
-
-#health-container
+#hud
 {
     width: 100%;
-    height: 12%;
+    height: 100%;
+}
 
-    flex-direction: row;
-    justify-content: space-between;
+#player-container
+{
+    position: absolute;
+
+    left: 20px;
+    top: 20px;
+
+    width: 400px;
+}
+
+#enemy-container
+{
+    position: absolute;
+
+    right: 20px;
+    top: 20px;
+
+    width: 400px;
+}
+
+#player-health,
+#enemy-health
+{
+    height: 30px;
+}
+
+#player-health-text,
+#enemy-health-text
+{
+    font-size: 16px;
+
+    margin-top: 4px;
+}
+
+#game-over-menu
+{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.75);
+
+    display: none;
+}
+
+#game-over-panel
+{
+    width: 400px;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    background-color: rgb(35, 35, 35);
+
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+
     align-items: center;
 }
 
-
-/* =========================================
-   BASE HEALTH BAR STYLE
-   ========================================= */
-
-.health-bar
+#game-over-title
 {
-    width: 45%;
-    height: 100%;
+    font-size: 40px;
+
+    color: white;
+
+    unity-font-style: bold;
+
+    margin-bottom: 20px;
+
+    unity-text-align: middle-center;
 }
 
-
-/* =========================================
-   MIRRORED ENEMY BAR
-   ========================================= */
-
-#enemy-health
+#restart-button
 {
-    scale: -1 1;
-}
+    width: 200px;
+    height: 50px;
 
-
-/* =========================================
-   PROGRESS BAR INTERNAL FIXES
-   (UI Toolkit defaults don't scale well)
-   ========================================= */
-
-.health-bar .unity-progress-bar__background
-{
-    height: 100%;
-    border-radius: 6px;
-}
-
-.health-bar .unity-progress-bar__progress
-{
-    height: 100%;
-    border-radius: 6px;
-}
-
-
-/* =========================================
-   OPTIONAL COLORS
-   ========================================= */
-
-#player-health .unity-progress-bar__progress
-{
-    background-color: rgb(70,200,70);
-}
-
-#enemy-health .unity-progress-bar__progress
-{
-    background-color: rgb(220,70,70);
-}
-
-
-/* =========================================
-   REMOVE PROGRESSBAR LABEL (WE ARE NOT USING IT)
-   ========================================= */
-
-.unity-progress-bar__title
-{
-    display: none;
+    font-size: 20px;
 }
